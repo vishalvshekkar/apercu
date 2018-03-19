@@ -12,7 +12,7 @@ class Typewriter extends React.Component {
     const wrapper = document.querySelector('.type-wrapper');
     wrapper.style.minHeight = `0px`;
     el.style.opacity = 0;
-    el.innerHTML = typeStrings[props.choice];
+    el.innerHTML = typeStrings[props.choice] + ' |';
     const height = wrapper.clientHeight;
     wrapper.style.minHeight = `${height}px`;
     el.innerHTML = '';
@@ -49,7 +49,7 @@ class Typewriter extends React.Component {
   render() {
     return (
       <div className="type-wrapper">
-        <div id="typeit" dangerouslySetInnerHTML={{ __html: typeStrings[this.props.choice] }} ></div>
+        <h1 id="typeit" dangerouslySetInnerHTML={{ __html: typeStrings[this.props.choice] }} ></h1>
       </div>
     )
   }

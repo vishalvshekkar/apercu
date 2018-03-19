@@ -27,7 +27,6 @@ a {
   line-height: 1;
   border-bottom: 1px solid #aaa;
 }
-
 .container {
   flex: 1;
   width: 100%;
@@ -38,7 +37,6 @@ a {
 
 .type-wrapper {
   font-family: 'Courier', monospace;
-  font-size: 56px;
   line-height: 1.2;
   position: relative;
   margin-bottom: 100px;
@@ -59,6 +57,7 @@ a {
 
 #typeit {
   display: inline;
+  font-size: 56px;
 }
 
 .type-wrapper span {
@@ -67,6 +66,7 @@ a {
 
 .typed-cursor {
   animation: blinker 1s step-end infinite;
+  font-size: 56px;
 }
 
 @keyframes blinker {
@@ -83,6 +83,8 @@ a {
 .tab-links {
   list-style: none;
   padding-left: 0;
+  padding-top: 8px;
+  margin: 0;
   width: 35%;
   float: left;
   text-transform: capitalize;
@@ -103,12 +105,12 @@ a {
   color: blue;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .tab-link a {
     position: absolute;
     right: 100%;
     white-space: nowrap;
-    top: 10px;
+    top: 0;
     transform: translate3d(0,0,0) translateX(100%);
     transition: 200ms;
   }
@@ -130,6 +132,10 @@ a {
 .content {
   list-style: none;
   padding-left: 0;
+}
+
+.hidden {
+  display: none;
 }
 
 .content-item {
@@ -195,7 +201,7 @@ footer {
   height: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .header {
     padding: 30px 0;
@@ -222,8 +228,17 @@ footer {
   }  
 
   .type-wrapper {
-    font-size: 36px;
     margin-bottom: 50px;
+  }
+
+  .type-wrapper::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+  }
+  
+  #typeit, .typed-cursor {
+    font-size: 36px;
   }
 
   .type-wrapper::after {

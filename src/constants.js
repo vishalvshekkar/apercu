@@ -1,3 +1,19 @@
+export const pageTitle = 'Aperçu.ai';
+
+export const pageDescription = 'Aperçu.ai is an amazing thing.';
+
+export const pageLink = 'https://www.apercu.ai';
+
+export const pageImage = 'https://www.apercu.ai/assets/image.png';
+
+export const twitterHandle = '@apercu_ai';
+
+export const twitterLink = 'https://twitter.com';
+
+export const facebookLink = 'https://facebook.com';
+
+export const instaLink = 'https://instagram.com';
+
 export const typeStrings = {
   none: 'There is <span>nothing</span> to be written',
   one: 'This is string <span>one</span> to be written',

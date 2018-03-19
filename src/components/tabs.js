@@ -20,11 +20,15 @@ const Tabs = (props) => (
     {
       tabContent.hasOwnProperty([props.choice]) ?
       <div className="tab-content">
-        <ul className="content">
-          {
-            tabContent[props.choice].map((content, idx) => <li className="content-item" key={content + props.choice}>({alphabetArray[idx]}) {content}</li> )
-          }
-        </ul>
+        {
+          Object.keys(tabContent).map(tab => (
+            <ul className={cx("content", { hidden: tab !== props.choice })} key={tab+tab} >
+              {
+                tabContent[tab].map((content, idx) => <li className="content-item" key={content + props.choice}>({alphabetArray[idx]}) {content}</li> )
+              }
+            </ul>
+          ))
+        }
       </div>
       : null
     }
