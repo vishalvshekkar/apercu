@@ -117,7 +117,7 @@ a {
 
 @media (max-width: 768px) {
   .tab-links {
-    width: 50%;
+    width: 100%;
     float: none;
     margin: 0;
     padding-bottom: 30px;
