@@ -4,7 +4,7 @@ export const typeStrings = {
   two: 'This is string <span>two</span> to be written',
   three: 'This is string <span>three</span> to be written',
   four: 'This is string <span>four</span> to be written',
-  five: 'This is string <span>five</span> to be written',
+  five: 'This is string <span>five</span> to be written and has a lot more text. a lot more',
 }
 
 export const tabLinks = [

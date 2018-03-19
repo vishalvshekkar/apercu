@@ -30,7 +30,7 @@ a {
 
 .type-wrapper {
   font-family: 'Courier', monospace;
-  font-size: 52px;
+  font-size: 56px;
   line-height: 1.2;
   position: relative;
   margin-bottom: 100px;
@@ -70,20 +70,23 @@ a {
   text-transform: capitalize;
 }
 
-.tab-link a {
-  display: block;
-  padding: 10px 0;
-  transition: 200ms;
+.tab-link {
   position: relative;
   height: 45px;
 }
 
-.tab-link.active a span {
+.tab-link a {
+  display: inline-block;
+  padding: 10px 0;
+  transition: 200ms;
+}
+
+.tab-link.active a {
   color: blue;
 }
 
 @media (min-width: 769px) {
-  .tab-link a span {
+  .tab-link a {
     position: absolute;
     right: 100%;
     white-space: nowrap;
@@ -92,7 +95,7 @@ a {
     transition: 200ms;
   }
 
-  .tab-link.active a span {
+  .tab-link.active a {
     display: block;
     right: 0;
     transform: translateX(0);
@@ -116,6 +119,16 @@ a {
 }
 
 @media (max-width: 768px) {
+
+  .header {
+    padding: 30px 0;
+    font-size: 50px;
+  }
+
+  .container {
+    padding: 30px 15px 0;
+  }
+
   .tab-links {
     width: 100%;
     float: none;
@@ -130,4 +143,25 @@ a {
     padding-top: 30px;
     border-top: 1px solid #aaa;
   }  
+
+  .type-wrapper {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  .type-wrapper::after {
+    top: calc(100% + 20px);
+  }
+
+  .tabs {
+    font-size: 16px;
+  }
+
+  .tab-links {
+    padding-bottom: 15px;
+  }
+
+  .tab-content {
+    padding-top: 20px;
+  }
 }
