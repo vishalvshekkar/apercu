@@ -4,7 +4,7 @@ import cx from 'classnames'
 import { tabLinks, tabContent, alphabetArray } from '../constants'
 
 const Tabs = (props) => (
-  <div className="tabs">
+  <main className="tabs">
     <ul className="tab-links">
       {
         tabLinks.map(tabLink => (
@@ -19,16 +19,16 @@ const Tabs = (props) => (
     </ul>
     {
       tabContent.hasOwnProperty([props.choice]) ?
-      <main className="tab-content">
+      <div className="tab-content">
         <ul className="content">
           {
             tabContent[props.choice].map((content, idx) => <li className="content-item" key={content + props.choice}>({alphabetArray[idx]}) {content}</li> )
           }
         </ul>
-      </main>
+      </div>
       : null
     }
-  </div>
+  </main>
 )
 
 export default Tabs

@@ -14,7 +14,6 @@ class Typewriter extends React.Component {
     el.style.opacity = 0;
     el.innerHTML = typeStrings[props.choice];
     const height = wrapper.clientHeight;
-    console.log(height)
     wrapper.style.minHeight = `${height}px`;
     el.innerHTML = '';
     el.style.opacity = 1;

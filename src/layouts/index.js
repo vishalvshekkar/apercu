@@ -3,12 +3,13 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
+import Footer from '../components/footer';
 import './index.css'
 import '../../static/CourierStd/styles.css'
 import '../../static/FuturaStd-HeavyOblique/styles.css'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="layout">
     <Helmet>
       <title>Aperçu.ai</title>
       <meta name="description" content="Aperçu.ai is an amazing thing." />
@@ -17,6 +18,7 @@ const TemplateWrapper = ({ children }) => (
     <div className="container" >
       {children()}
     </div>
+    <Footer />
   </div>
 )
 
