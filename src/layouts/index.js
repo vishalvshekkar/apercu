@@ -8,8 +8,7 @@ import {
   pageTitle, pageDescription, pageLink, pageImage, twitterHandle } from '../constants'
 
 import './index.css'
-import '../../static/CourierStd/styles.css'
-import '../../static/FuturaStd-HeavyOblique/styles.css'
+import '../../static/fonts/stylesheet.css'
 
 const TemplateWrapper = ({ children }) => (
   <div className="layout">
