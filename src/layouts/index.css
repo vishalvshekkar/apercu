@@ -85,6 +85,8 @@ a {
 
 .tab-links {
   list-style: none;
+  font-family: 'Futura Std', Arial, Helvetica, sans-serif;
+  font-style: italic;
   padding-left: 0;
   padding-top: 8px;
   margin: 0;
