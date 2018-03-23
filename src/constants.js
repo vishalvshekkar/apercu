@@ -23,6 +23,8 @@ export const typeStrings = {
   five: 'This is string <span>five</span> to be written and has a lot more text. a lot more',
 }
 
+export const speed = 40;
+
 export const tabLinks = [
   { 
     id: 'one',

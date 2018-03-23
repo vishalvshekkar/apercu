@@ -20,7 +20,7 @@ a {
 
 .header {
   text-align: center;
-  padding: 40px 0;
+  padding: 20px 0;
   height: auto;
   line-height: 1;
   border-bottom: 1px solid #aaa;
@@ -35,16 +35,14 @@ a {
 .container {
   flex: 1;
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 60px 30px 0;
+  padding: 60px 40px 0;
 }
 
 .type-wrapper {
   font-family: 'Courier Std', monospace;
   line-height: 1.2;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   transform: translate3d(0,0,0);
   min-height: 64px;
 }
@@ -52,7 +50,7 @@ a {
 .type-wrapper::after {
   content: '';
   position: absolute;
-  top: calc(100% + 40px);
+  top: 100%;
   left: 0;
   width: 200px;
   height: 5px;
@@ -210,7 +208,10 @@ footer {
 @media (max-width: 767px) {
 
   .header {
-    padding: 30px 0;
+    padding: 15px 0;
+  }
+  
+  .header a {
     font-size: 50px;
   }
 
@@ -234,7 +235,7 @@ footer {
   }  
 
   .type-wrapper {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .type-wrapper::after {
@@ -248,7 +249,7 @@ footer {
   }
 
   .type-wrapper::after {
-    top: calc(100% + 20px);
+    top: calc(100% + 5px);
   }
 
   .tabs {

@@ -1,7 +1,7 @@
 import React from 'react'
 import Typed from 'typed.js';
 
-import { typeStrings } from '../constants'
+import { typeStrings, speed } from '../constants'
 
 class Typewriter extends React.Component {
 
@@ -23,7 +23,7 @@ class Typewriter extends React.Component {
     if (window) {
       this.heightFix(this.props);
       this.typeit = new Typed('#typeit', {
-        typeSpeed: 30,
+        typeSpeed: speed,
         strings: [typeStrings[this.props.choice]],
       })
     }
@@ -39,7 +39,7 @@ class Typewriter extends React.Component {
         this.typeit.destroy();
         this.heightFix(newProps);
         this.typeit = new Typed('#typeit', {
-          typeSpeed: 30,
+          typeSpeed: speed,
           strings: [typeStrings[newProps.choice]],
         })
       }
