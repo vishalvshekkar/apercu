@@ -15,12 +15,12 @@ export const facebookLink = 'https://facebook.com';
 export const instaLink = 'https://instagram.com';
 
 export const typeStrings = {
-  none: 'There is <span>nothing</span> to be written',
-  one: 'This is string <span>one</span> to be written',
-  two: 'This is string <span>two</span> to be written',
-  three: 'This is string <span>three</span> to be written',
-  four: 'This is string <span>four</span> to be written',
-  five: 'This is string <span>five</span> to be written and has a lot more text. a lot more',
+  none: 'Power your <b>business</b> with our image and video <b>recognition</b> models',
+  one: 'Automatically <b>tag</b> and add <b>key words<b> to your image and video library ',
+  two: 'Connect <b>customers</b> with what they’re looking for through <b>better</b> search',
+  three: 'Automatically <b>filter</b> out <b>sensitive</b> content from your platform',
+  four: '<b>Teach</b> a model to recognize any concept in your world with <b>custom</b> training',
+  five: 'Power your <b>business</b> with our image and video <b>recognition</b> models',
 }
 
 export const speed = 40;
@@ -50,34 +50,27 @@ export const tabLinks = [
 
 export const tabContent = {
   one: [
-    "This is content for one",
-    "Teach your model to recognize concepts using your own vocabulary and taxonomy instead of general terms.",
-    "Train a model to recognize a new concept with just a handful of examples",
-    "Get better searching your recognize more results when browsing and content by training a model to concepts .",
+    "Effortlessly manage large media libraries, organize your collection of media assets through auto-tagging and categorization.",
+    "Save time searching for image and video content, easily find any image or video through tag search and visual similarity.",
+    "Engage your audience with better content, curate more relevant content and improve your site’s search results for your users.",
   ],
   two: [
-    "This is content for two",
-    "Teach your model to recognize concepts using your own vocabulary and taxonomy instead of general terms.",
-    "Train a model to recognize a new concept with just a handful of examples",
-    "Get better searching your recognize more results when browsing and content by training a model to concepts .",
+    "Increase user engagement by helping users find exactly what they’re looking for through search by image for visually similar content and products.",
+    "Sell more with visual recommendations by serving relevant image-based product recommendations based on a customer’s current behavior, not past purchases.",
+    "Improve content discovery by onnecting users with more content through a better",
   ],
   three: [
-    "This is content for three",
-    "Teach your model to recognize concepts using your own vocabulary and taxonomy instead of general terms.",
-    "Train a model to recognize a new concept with just a handful of examples",
-    "Get better searching your recognize more results when browsing and content by training a model to concepts .",
+    "Protect your brand from unwanted content by automatically filter or flag unwanted media from user-generated content or product listings.",
+    "Improve your user experience Moderate user-generated content without the need to wait for human moderation or manual review.",
+    "Save time through automation Augment your human moderators and speed up their workflows by automatically tagging each image.",
   ],
   four: [
-    "This is content for four",
     "Teach your model to recognize concepts using your own vocabulary and taxonomy instead of general terms.",
-    "Train a model to recognize a new concept with just a handful of examples",
-    "Get better searching your recognize more results when browsing and content by training a model to concepts .",
+    "Train a model to recognize a new concept with just a handful of examples.",
+    "Get better results when browsing and searching your content by training a model to recognize more concepts.",
   ],
   five: [
-    "This is content for five",
-    "Teach your model to recognize concepts using your own vocabulary and taxonomy instead of general terms.",
-    "Train a model to recognize a new concept with just a handful of examples",
-    "Get better searching your recognize more results when browsing and content by training a model to concepts .",
+    "You will see us soon!",
   ],
 }
 

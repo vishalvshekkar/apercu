@@ -8,8 +8,6 @@
         url('FuturaStd.woff2') format('woff2'),
         url('FuturaStd.woff') format('woff'),
         url('FuturaStd.svg#FuturaStd') format('svg');
-    font-weight: 900;
-    font-style: italic;
 }
 
 @font-face {
@@ -20,6 +18,4 @@
         url('CourierStd.woff2') format('woff2'),
         url('CourierStd.woff') format('woff'),
         url('CourierStd.svg#CourierStd') format('svg');
-    font-weight: 500;
-    font-style: normal;
 }

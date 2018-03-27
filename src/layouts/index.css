@@ -29,7 +29,6 @@ a {
 .header a {
   font-family: 'Futura Std', Arial, Helvetica, sans-serif;
   font-size: 60px;
-  font-style: italic;
 }
 
 .container {
@@ -39,12 +38,11 @@ a {
 }
 
 .type-wrapper {
-  font-family: 'Courier Std', monospace;
-  line-height: 1.2;
   position: relative;
   margin-bottom: 60px;
   transform: translate3d(0,0,0);
   min-height: 64px;
+  font-size: 56px;
 }
 
 .type-wrapper::after {
@@ -59,17 +57,21 @@ a {
 }
 
 #typeit {
+  font-family: 'Courier Std', monospace;
+  line-height: 1.2;
   display: inline;
   font-size: 56px;
 }
 
-.type-wrapper span {
+.type-wrapper b {
   color: blue;
 }
 
 .typed-cursor {
   animation: blinker 1s step-end infinite;
   font-size: 56px;
+  color: white;
+  border-right: 5px solid black;
 }
 
 @keyframes blinker {
@@ -86,9 +88,8 @@ a {
 .tab-links {
   list-style: none;
   font-family: 'Futura Std', Arial, Helvetica, sans-serif;
-  font-style: italic;
   padding-left: 0;
-  padding-top: 8px;
+  padding-top: 10px;
   margin: 0;
   width: 35%;
   float: left;
@@ -154,7 +155,6 @@ footer {
 
 .footer-title {
   font-family: 'Futura Std', Arial, Helvetica, sans-serif;
-  font-style: italic;
   font-size: 32px;
   margin: 30px 0;
 }
@@ -172,13 +172,17 @@ footer {
 }
 
 .social-icon {
+  margin: 0 10px;
+}
+
+.social-icon a {
+  display: block;
   border: 2px solid #1c1c1c;
   padding: 10px;
   height: 52px;
   width: 52px;
   text-align: center;
   border-radius: 50%;
-  margin: 0 10px;
 }
 
 .social-icon img {
