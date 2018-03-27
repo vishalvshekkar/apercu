@@ -242,6 +242,7 @@ footer {
 
   .type-wrapper {
     margin-bottom: 30px;
+    font-size: 36px;
   }
 
   .type-wrapper::after {
