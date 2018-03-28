@@ -16,7 +16,7 @@ export const instaLink = 'https://instagram.com';
 
 export const typeStrings = {
   none: 'Power your <b>business</b> with our image and video <b>recognition</b> models',
-  one: 'Automatically <b>tag</b> and add <b>key words<b> to your image and video library ',
+  one: 'Automatically <b>tag</b> and add <b>key words</b> to your image and video library ',
   two: 'Connect <b>customers</b> with what they’re looking for through <b>better</b> search',
   three: 'Automatically <b>filter</b> out <b>sensitive</b> content from your platform',
   four: '<b>Teach</b> a model to recognize any concept in your world with <b>custom</b> training',
