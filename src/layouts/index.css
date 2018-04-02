@@ -19,11 +19,8 @@ a {
 }
 
 .header {
-  text-align: center;
-  padding: 20px 0;
+  padding: 20px 40px;
   height: auto;
-  line-height: 1;
-  border-bottom: 1px solid #aaa;
 }
 
 .header a {
@@ -31,10 +28,14 @@ a {
   font-size: 60px;
 }
 
+.header .logo {
+  height: 60px;
+}
+
 .container {
   flex: 1;
   width: 100%;
-  padding: 60px 40px 0;
+  padding: 20px 40px 0;
 }
 
 .type-wrapper {
@@ -71,7 +72,7 @@ a {
   animation: blinker 1s step-end infinite;
   font-size: 56px;
   color: white;
-  border-right: 5px solid black;
+  border-right: 5px solid blue;
 }
 
 @keyframes blinker {
@@ -148,6 +149,18 @@ a {
   margin-bottom: 20px;
 }
 
+.team-member {
+  margin-bottom: 30px;
+}
+
+.designation, .name {
+  margin: 0;
+}
+
+.name {
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   margin-top: 100px;
@@ -214,15 +227,15 @@ footer {
 @media (max-width: 767px) {
 
   .header {
-    padding: 15px 0;
+    padding: 15px 20px;
   }
   
-  .header a {
-    font-size: 50px;
+  .header .logo {
+    height: 50px;
   }
 
   .container {
-    padding: 30px 15px 0;
+    padding: 10px 15px 0;
   }
 
   .tab-links {
@@ -255,6 +268,10 @@ footer {
     font-size: 36px;
   }
 
+  .typed-cursor {
+    border-width: 3px;
+  }
+
   .type-wrapper::after {
     top: calc(100% + 5px);
   }
@@ -279,7 +296,7 @@ footer {
     font-size: 24px;
   }
 
-  .social-icon {
+  .social-icon a {
     height: 48px;
     width: 48px;
   }

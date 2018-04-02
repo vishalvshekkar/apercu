@@ -24,7 +24,15 @@ const Tabs = (props) => (
           Object.keys(tabContent).map(tab => (
             <ul className={cx("content", { hidden: tab !== props.choice })} key={tab+tab} >
               {
-                tabContent[tab].map((content, idx) => <li className="content-item" key={content + props.choice}>({alphabetArray[idx]}) {content}</li> )
+                tab === 'team' ?
+                  tabContent[tab].map((content, idx) => (
+                    <li className="content-item team-member" key={content.name + props.choice}>
+                      <h4 className="name">{content.name}</h4>
+                      <p className="designation">{content.designation}</p>
+                    </li>
+                    ))
+                  :
+                  tabContent[tab].map((content, idx) => <li className="content-item" key={content + props.choice}>({alphabetArray[idx]}) {content}</li> )
               }
             </ul>
           ))
