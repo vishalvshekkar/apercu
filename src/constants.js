@@ -19,15 +19,15 @@ export const instaLink = 'https://instagram.com';
 export const contactLink = '/';
 
 export const typeStrings = {
-  none: "Power your <b>business</b> with our image and video <b>recognition</b> models",
-  'organize-and-create': "Automatically <b>tag</b> and add <b>key words</b> to your image and video library ",
+  'none': "Power your <b>business</b> with our image and video <b>recognition</b> models",
+  'organize-and-create': "Automatically <b>tag</b> and add <b>key words</b> to your image and video library",
   'visual-search': "Connect <b>customers</b> with what they’re looking for through <b>better</b> search",
   'moderation': "Automatically <b>filter</b> out <b>sensitive</b> content from your platform",
   'custom-training': "<b>Teach</b> a model to recognize any concept in your world with <b>custom</b> training",
-  'team': "We are a worldwide team with offices in NYC, Paris and Bangalore",
+  'team': "We are a worldwide team with offices in <b>NYC</b>, <b>Paris</b> and <b>Bangalore</b>",
 }
 
-export const speed = 40;
+export const speed = 50;
 
 export const tabLinks = [
   { 

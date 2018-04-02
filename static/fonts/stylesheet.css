@@ -8,9 +8,9 @@
         url('FuturaStd.woff2') format('woff2'),
         url('FuturaStd.woff') format('woff'),
         url('FuturaStd.svg#FuturaStd') format('svg');
-}
-
-@font-face {
+    }
+    
+    @font-face {
     font-family: 'Courier Std';
     src: url('CourierStd.eot'),
         url('CourierStd.ttf') format('truetype'),
@@ -18,4 +18,5 @@
         url('CourierStd.woff2') format('woff2'),
         url('CourierStd.woff') format('woff'),
         url('CourierStd.svg#CourierStd') format('svg');
-}
+        font-weight: bold;
+    }

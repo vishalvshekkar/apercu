@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import Typewriter from '../components/typed';
+import Typewriter from '../components/typewriter';
 import Tabs from '../components/tabs';
 
 import { typeStrings } from '../constants'

@@ -41,7 +41,6 @@ a {
 .type-wrapper {
   position: relative;
   margin-bottom: 60px;
-  transform: translate3d(0,0,0);
   min-height: 64px;
   font-size: 56px;
 }
@@ -59,9 +58,21 @@ a {
 
 #typeit {
   font-family: 'Courier Std', monospace;
+  font-weight: bold;
   line-height: 1.2;
-  display: inline;
+  display: block;
   font-size: 56px;
+  transform: translate3d(0,0,0);
+}
+
+#typeit span {
+  display: inline-block !important;
+}
+
+.cursor::after {
+  content: "|";
+  animation: blinker 1s step-end infinite;
+  color: blue;
 }
 
 .type-wrapper b {
@@ -73,6 +84,10 @@ a {
   font-size: 56px;
   color: white;
   border-right: 5px solid blue;
+}
+
+#typeit span.ti-cursor {
+  display: none !important;
 }
 
 @keyframes blinker {

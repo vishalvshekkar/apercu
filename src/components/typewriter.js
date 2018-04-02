@@ -1,11 +1,18 @@
 import React from 'react'
-import Typed from 'typed.js';
 
 import { typeStrings, speed } from '../constants'
 
-class Typewriter extends React.Component {
+const defaultConfig = {
+  speed: speed,
+  deleteSpeed: 5,
+  lifeLike: false,
+  cursor: false,
+  afterComplete: function (instance) {
+    document.querySelector('#typeit span').classList += ' cursor';
+  }
+}
 
-  typeit = null;
+class Typewriter extends React.Component {
 
   heightFix = (props) => {
     const el = document.getElementById('typeit');
@@ -22,10 +29,10 @@ class Typewriter extends React.Component {
   componentDidMount() {
     if (window) {
       this.heightFix(this.props);
-      this.typeit = new Typed('#typeit', {
-        typeSpeed: speed,
+      const TypeIt = require('typeit');
+      new TypeIt('#typeit', Object.assign({}, defaultConfig ,{
         strings: [typeStrings[this.props.choice]],
-      })
+      }))
     }
   }
 
@@ -35,13 +42,15 @@ class Typewriter extends React.Component {
 
   componentWillReceiveProps(newProps) {
     if (window) {
+      this.heightFix(newProps);
+      const TypeIt = require('typeit');
+      document.getElementById('typeit').innerHTML = typeStrings[this.props.choice];
       if (newProps.choice !== this.props.choice) {
-        this.typeit.destroy();
-        this.heightFix(newProps);
-        this.typeit = new Typed('#typeit', {
-          typeSpeed: speed,
+        new TypeIt('#typeit', Object.assign({}, defaultConfig ,{
+          startDelete: true,
+          nextStringDelay: 100,
           strings: [typeStrings[newProps.choice]],
-        })
+        }))
       }
     }
   } 
@@ -49,7 +58,7 @@ class Typewriter extends React.Component {
   render() {
     return (
       <div className="type-wrapper">
-        <h1 id="typeit" dangerouslySetInnerHTML={{ __html: typeStrings[this.props.choice] }} ></h1>
+        <div id="typeit" dangerouslySetInnerHTML={{ __html: typeStrings[this.props.choice] }} />
       </div>
     )
   }
