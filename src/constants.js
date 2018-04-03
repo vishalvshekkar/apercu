@@ -1,13 +1,20 @@
 import logo from '../static/icons/logo.png';
 
+// this goes in title of the page and as alt text for the image in the logo
 export const pageTitle = 'Modvision';
 
+// this is for SEO. I have copied the default header for this.
 export const pageDescription = 'Power your business with our image and video recognition models';
 
+// this is also for SEO. Please change it after you deploy.
 export const pageLink = 'https://www.modvision.com';
 
+// for SEO. No need to touch it, just make sure you keep the name logo.png.
 export const pageImage = logo;
 
+/**
+ * Social media stuff below. Handle them in time.
+ */
 export const twitterHandle = '@modvision';
 
 export const twitterLink = 'https://twitter.com';
@@ -16,19 +23,22 @@ export const facebookLink = 'https://facebook.com';
 
 export const instaLink = 'https://instagram.com';
 
+// footer contact link
 export const contactLink = '/';
 
+// this is for the headers
 export const typeStrings = {
   'none': "Power your <b>business</b> with our image and video <b>recognition</b> models",
   'organize-and-create': "Automatically <b>tag</b> and add <b>key words</b> to your image and video library",
   'visual-search': "Connect <b>customers</b> with what they’re looking for through <b>better</b> search",
   'moderation': "Automatically <b>filter</b> out <b>sensitive</b> content from your platform",
-  'custom-training': "<b>Teach</b> a model to recognize any concept in your world with <b>custom</b> training",
+  'custom-training': "<b>Teach</b> a model to recognize any concept with <b>custom</b> training",
   'team': "We are a worldwide team with offices in <b>NYC</b>, <b>Paris</b> and <b>Bangalore</b>",
 }
 
-export const speed = 50;
+export const speed = 30; // Typewriter speed, Lower is faster.
 
+// The tabs on the left
 export const tabLinks = [
   { 
     id: 'organize-and-create',
@@ -48,10 +58,11 @@ export const tabLinks = [
   },
   {
     id: 'team',
-    label: "The Team"
+    label: "Team"
   },
 ]
 
+// tab content on the right. Team is handled especially in the code due to different design.
 export const tabContent = {
   'organize-and-create': [
     "Effortlessly manage large media libraries, organize your collection of media assets through auto-tagging and categorization.",
@@ -75,7 +86,7 @@ export const tabContent = {
   ],
   'team': [
     {
-      name: 'Louis-Alexandre Etezad-Heidari',
+      name: 'Louis-Alexandre Etezad-Heydari',
       designation: 'Partner, Strategy'
     },
     {
@@ -101,4 +112,5 @@ export const tabContent = {
   ],
 }
 
+// this is for the alphabetical numbering
 export const alphabetArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];

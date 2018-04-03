@@ -19,12 +19,14 @@ a {
 }
 
 .header {
-  padding: 20px 40px;
+  padding: 40px 40px 20px;
   height: auto;
 }
 
 .header a {
   font-family: 'Futura Std', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
   font-size: 60px;
 }
 
@@ -48,7 +50,7 @@ a {
 .type-wrapper::after {
   content: '';
   position: absolute;
-  top: 100%;
+  top: calc(100% + 20px);
   left: 0;
   width: 200px;
   height: 5px;
@@ -58,7 +60,6 @@ a {
 
 #typeit {
   font-family: 'Courier Std', monospace;
-  font-weight: bold;
   line-height: 1.2;
   display: block;
   font-size: 56px;
@@ -77,6 +78,7 @@ a {
 
 .type-wrapper b {
   color: blue;
+  font-weight: normal;
 }
 
 .typed-cursor {
@@ -104,6 +106,8 @@ a {
 .tab-links {
   list-style: none;
   font-family: 'Futura Std', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
   padding-left: 0;
   padding-top: 10px;
   margin: 0;
@@ -123,8 +127,9 @@ a {
   transition: 200ms;
 }
 
-.tab-link.active a {
+.tab-link.active a, .tab-link:hover a {
   color: blue;
+  transition: 300ms;
 }
 
 @media (min-width: 768px) {
@@ -134,19 +139,20 @@ a {
     white-space: nowrap;
     top: 0;
     transform: translate3d(0,0,0) translateX(100%);
-    transition: 200ms;
+    transition: 100ms;
   }
 
   .tab-link.active a {
     display: block;
     right: 0;
     transform: translateX(0);
-    transition: 200ms;
+    transition: 100ms;
   }
 }
 
 .tab-content {
   width: 65%;
+  max-width: 700px;
   float: left;
   padding-left: 60px;
 }
@@ -178,11 +184,13 @@ a {
 
 footer {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 160px;
 }
 
 .footer-title {
   font-family: 'Futura Std', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
   font-size: 32px;
   margin: 30px 0;
 }
@@ -220,7 +228,6 @@ footer {
 
 .footer-copy {
   font-family: 'Courier Std', monospace;
-  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -242,7 +249,7 @@ footer {
 @media (max-width: 767px) {
 
   .header {
-    padding: 15px 20px;
+    padding: 30px 20px 15px;
   }
   
   .header .logo {
@@ -277,6 +284,7 @@ footer {
     content: '';
     width: 100px;
     height: 3px;
+    top: calc(100% + 15px);
   }
   
   #typeit, .typed-cursor {
@@ -285,10 +293,6 @@ footer {
 
   .typed-cursor {
     border-width: 3px;
-  }
-
-  .type-wrapper::after {
-    top: calc(100% + 5px);
   }
 
   .tabs {
@@ -304,7 +308,7 @@ footer {
   }
 
   footer {
-    margin-top: 60px;
+    margin-top: 120px;
   }
 
   .footer-title {

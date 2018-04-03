@@ -15,7 +15,7 @@ const Footer = () => (
       <li className="social-icon"><a target="_blank" href={twitterLink}><img src={twitter} alt="modvision twitter"/></a></li>
       <li className="social-icon"><a target="_blank" href={instaLink}><img src={instagram} alt="modvision instagram" /></a></li>
     </ul>
-    <p className="footer-copy"><span className="bigger">©</span><span>Usme, Inc 2018</span></p>
+    <p className="footer-copy"><span className="bigger">©</span><span>Useme, Inc 2018</span></p>
   </footer>
 )
 
