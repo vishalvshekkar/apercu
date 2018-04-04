@@ -5,11 +5,11 @@ import facebook from '../../static/icons/facebook.svg';
 import instagram from '../../static/icons/instagram.svg';
 import twitter from '../../static/icons/twitter.svg';
 
-import { twitterLink, facebookLink, instaLink, contactLink } from '../constants'
+import { twitterLink, facebookLink, instaLink, contactLink, contactLinkLabel} from '../constants'
 
 const Footer = () => (
   <footer>
-    <h4 className="footer-title" >You can reach out to us <Link to={contactLink} >here</Link>!</h4>
+    <h4 className="footer-title" >You can reach out to us at <a href={contactLink} target="_blank" >{contactLinkLabel}</a></h4>
     <ul className="social-icons">
       <li className="social-icon"><a target="_blank" href={facebookLink}><img src={facebook} alt="modvision facebook" /></a></li>
       <li className="social-icon"><a target="_blank" href={twitterLink}><img src={twitter} alt="modvision twitter"/></a></li>
