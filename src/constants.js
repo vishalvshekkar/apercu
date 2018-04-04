@@ -25,7 +25,7 @@ export const instaLink = 'https://instagram.com/modvisionai';
 
 // footer contact link
 export const contactLink = 'mailto:hello@modvision.ai';
-export const contactLinkLabel = 'hello@modvision.ai';
+export const contactLinkLabel = 'here';
 
 // this is for the headers
 export const typeStrings = {
