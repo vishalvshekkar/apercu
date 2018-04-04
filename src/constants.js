@@ -15,13 +15,13 @@ export const pageImage = logo;
 /**
  * Social media stuff below. Handle them in time.
  */
-export const twitterHandle = '@modvision';
+export const twitterHandle = '@modvisionai';
 
-export const twitterLink = 'https://twitter.com';
+export const twitterLink = 'https://twitter.com/modvisionai';
 
-export const facebookLink = 'https://facebook.com';
+export const facebookLink = 'https://facebook.com/modvisionai';
 
-export const instaLink = 'https://instagram.com';
+export const instaLink = 'https://instagram.com/modvisionai';
 
 // footer contact link
 export const contactLink = 'mailto:hello@modvision.ai';
