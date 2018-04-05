@@ -9,6 +9,8 @@ export const pageDescription = 'Power your business with our image and video rec
 // this is also for SEO. Please change it after you deploy.
 export const pageLink = 'https://www.modvision.com';
 
+export const intercomAppId = 'c0joqpjh';
+
 // for SEO. No need to touch it, just make sure you keep the name logo.png.
 export const pageImage = logo;
 
