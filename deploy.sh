@@ -1,2 +1,2 @@
 gatsby build
-surge ./public https://apercu.surge.sh
+surge ./public https://modvision.ai

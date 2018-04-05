@@ -7,7 +7,7 @@ export const pageTitle = 'Modvision';
 export const pageDescription = 'Power your business with our image and video recognition models';
 
 // this is also for SEO. Please change it after you deploy.
-export const pageLink = 'https://www.modvision.com';
+export const pageLink = 'https://www.modvision.ai';
 
 // for SEO. No need to touch it, just make sure you keep the name logo.png.
 export const pageImage = logo;
@@ -41,19 +41,19 @@ export const speed = 30; // Typewriter speed, Lower is faster.
 
 // The tabs on the left
 export const tabLinks = [
-  { 
+  {
     id: 'organize-and-create',
     label: "Organize & Curate"
   },
-  { 
+  {
     id: 'visual-search',
     label: "Visual Search"
   },
-  { 
+  {
     id: 'moderation',
     label: "Moderation"
   },
-  { 
+  {
     id: 'custom-training',
     label: "Custom Training"
   },
