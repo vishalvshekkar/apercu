@@ -9,7 +9,7 @@ import { twitterLink, facebookLink, instaLink, contactLink, contactLinkLabel} fr
 
 const Footer = () => (
   <footer>
-    <h4 className="footer-title" >You can reach out to us at <a href={contactLink} target="_blank" >{contactLinkLabel}</a></h4>
+    <h4 className="footer-title" >You can reach out to us <a href={contactLink} target="_blank" >{contactLinkLabel}</a></h4>
     <ul className="social-icons">
       <li className="social-icon"><a target="_blank" href={facebookLink}><img src={facebook} alt="modvision facebook" /></a></li>
       <li className="social-icon"><a target="_blank" href={twitterLink}><img src={twitter} alt="modvision twitter"/></a></li>
