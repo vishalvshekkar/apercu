@@ -4,7 +4,7 @@ import logo from '../static/icons/logo.png';
 export const pageTitle = 'Modvision';
 
 // this is for SEO. I have copied the default header for this.
-export const pageDescription = 'Power your business with our image and video recognition models';
+export const pageDescription = 'Power your business with our image and video recognition models.';
 
 // this is also for SEO. Please change it after you deploy.
 export const pageLink = 'https://www.modvision.ai';
@@ -31,9 +31,9 @@ export const contactLinkLabel = 'here';
 
 // this is for the headers
 export const typeStrings = {
-  'none': "Power your <b>business</b> with our image and video <b>recognition</b> models",
+  'none': "Power your business with our <b>image</b> and <b>video</b> recognition models",
   'organize-and-create': "Automatically <b>tag</b> and add <b>key words</b> to your image and video library",
-  'visual-search': "Connect <b>customers</b> with what they’re looking for through <b>better</b> search",
+  'visual-search': "Connect <b>customers</b> with what they’re looking for through better <b>search</b>",
   'moderation': "Automatically <b>filter</b> out <b>sensitive</b> content from your platform",
   'custom-training': "<b>Teach</b> a model to recognize any concept with <b>custom</b> training",
   'team': "We are a worldwide team with offices in <b>NYC</b>, <b>Paris</b> and <b>Bangalore</b>",
